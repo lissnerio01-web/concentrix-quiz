@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Maternidad</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">
+🏠 Volver al menú
+</a>
+
+<header>
+<h1>🤰 Política de Maternidad</h1>
+</header>
+
+<div class="question">
+
+<h3>
+1. ¿Cuántas semanas de baja por maternidad tiene derecho una empleada?
+</h3>
+
+<button onclick="toggleAnswer('a1')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a1">
+✅ c) 16 semanas
+</div>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+2. ¿Qué porcentaje del salario base paga el ISSS durante la baja por maternidad?
+</h3>
+
+<button onclick="toggleAnswer('a2')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a2">
+✅ c) 100%
+</div>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+3. ¿Qué documento debe presentar la empleada para solicitar la baja por maternidad?
+</h3>
+
+<button onclick="toggleAnswer('a3')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a3">
+✅ b) Nota médica del ISSS o médico privado validado por ISSS
+</div>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+4. ¿Cuánto tiempo dura el periodo de lactancia con derecho a interrupción laboral?
+</h3>
+
+<button onclick="toggleAnswer('a4')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a4">
+✅ b) 6 meses
+</div>
+
+</div>
+
+
+<script>
+
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
