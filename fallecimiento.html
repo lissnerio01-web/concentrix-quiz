@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión del Fallecimiento del Empleado</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">
+🏠 Volver al menú
+</a>
+
+<header>
+<h1>⚰️ Gestión del Fallecimiento del Empleado</h1>
+</header>
+
+<div class="question">
+<h3>1. ¿Cuál es el objetivo de la política de gestión del fallecimiento del empleado?</h3>
+
+<button onclick="toggleAnswer('a1')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a1">
+✅ b) Definir requisitos y disposiciones en caso de fallecimiento de un empleado
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>2. ¿Qué documento debe presentar la familia para recibir el pago de liquidación?</h3>
+
+<button onclick="toggleAnswer('a2')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a2">
+✅ b) Certificado de defunción
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>3. ¿Quién es el contacto principal para los familiares del empleado fallecido?</h3>
+
+<button onclick="toggleAnswer('a3')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a3">
+✅ b) HRBP (Socio de Negocios de Talento Humano)
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>4. ¿En qué plazo debe realizarse el pago de liquidación tras recibir los documentos?</h3>
+
+<button onclick="toggleAnswer('a4')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a4">
+✅ b) 15 días
+</div>
+
+</div>
+
+
+<script>
+
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
