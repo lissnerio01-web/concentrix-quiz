@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Matrimonio</title>
+<title>Política de Matrimonio</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -44,6 +43,10 @@ padding:12px 20px;
 border-radius:10px;
 }
 
+h1{
+text-align:center;
+}
+
 </style>
 
 </head>
@@ -58,59 +61,74 @@ border-radius:10px;
 </header>
 
 <div class="question">
-
-<h3>
-1. ¿Cuál es el objetivo principal de la política de matrimonio?
-</h3>
-
-<button onclick="toggleAnswer('a1')">
-Mostrar respuesta
-</button>
-
+<h3>1. ¿Cuál es el objetivo principal de la política de matrimonio?</h3>
+<button onclick="toggleAnswer('a1')">Mostrar respuesta</button>
 <div class="answer" id="a1">
-
 ✅ a) Regular el beneficio de baja por matrimonio para empleados
-
 </div>
-
 </div>
 
 
 <div class="question">
-
-<h3>
-2. ¿Cuántos días remunerados de permiso por matrimonio se otorgan?
-</h3>
-
-<button onclick="toggleAnswer('a2')">
-Mostrar respuesta
-</button>
-
+<h3>2. ¿Cuántos días remunerados de permiso por matrimonio se otorgan?</h3>
+<button onclick="toggleAnswer('a2')">Mostrar respuesta</button>
 <div class="answer" id="a2">
-
 ✅ b) 5 días
-
 </div>
-
 </div>
 
 
 <div class="question">
-
-<h3>
-3. ¿Qué documento debe presentar el empleado al regresar de la baja?
-</h3>
-
-<button onclick="toggleAnswer('a3')">
-Mostrar respuesta
-</button>
-
+<h3>3. ¿Qué documento debe presentar el empleado al regresar de la baja?</h3>
+<button onclick="toggleAnswer('a3')">Mostrar respuesta</button>
 <div class="answer" id="a3">
-
 ✅ b) Certificado de matrimonio
-
+</div>
 </div>
 
+
+<div class="question">
+<h3>4. ¿Con cuánta anticipación debe solicitar el empleado el permiso por matrimonio?</h3>
+<button onclick="toggleAnswer('a4')">Mostrar respuesta</button>
+<div class="answer" id="a4">
+✅ c) 2 semanas
+</div>
+</div>
+
+
+<div class="question">
+<h3>5. ¿Qué sucede si el empleado no presenta pruebas de matrimonio al regresar?</h3>
+<button onclick="toggleAnswer('a5')">Mostrar respuesta</button>
+<div class="answer" id="a5">
+✅ b) Se activa la Cuadrícula Disciplinaria
+</div>
+</div>
+
+
+<div class="question">
+<h3>6. ¿Quién es responsable de notificar a la planificación de operaciones para la asignación del código adecuado?</h3>
+<button onclick="toggleAnswer('a6')">Mostrar respuesta</button>
+<div class="answer" id="a6">
+✅ b) El supervisor
+</div>
+</div>
+
+
+<div class="question">
+<h3>7. ¿Qué acrónimos se utilizan en la política y qué significan RRHH, HRBP, TL, etc.?</h3>
+<button onclick="toggleAnswer('a7')">Mostrar respuesta</button>
+<div class="answer" id="a7">
+✅ a) Recursos Humanos, Socio de Recursos Humanos, Jefe de equipo
+</div>
+</div>
+
+
+<div class="question">
+<h3>8. ¿Qué artículo del Código Laboral de El Salvador se menciona como referencia obligatoria?</h3>
+<button onclick="toggleAnswer('a8')">Mostrar respuesta</button>
+<div class="answer" id="a8">
+✅ b) Artículo 29b
+</div>
 </div>
 
 
@@ -121,14 +139,10 @@ function toggleAnswer(id){
 let answer=document.getElementById(id);
 
 if(answer.style.display==="block"){
-
 answer.style.display="none";
-
 }
 else{
-
 answer.style.display="block";
-
 }
 
 }
