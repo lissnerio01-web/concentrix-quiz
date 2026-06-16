@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Licencias y LOA</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">
+🏠 Volver al menú
+</a>
+
+<header>
+<h1>📋 Política de Licencias y LOA</h1>
+</header>
+
+<div class="question">
+<h3>1. ¿Cuál es el objetivo de la política de licencias y LOA?</h3>
+
+<button onclick="toggleAnswer('a1')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a1">
+✅ b) Ofrecer una visión general sobre permisos y ausencias
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>2. ¿Cuántos días pagados por obligaciones familiares puede tomar un empleado al año?</h3>
+
+<button onclick="toggleAnswer('a2')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a2">
+✅ c) 15 días
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>3. ¿Qué documento debe presentar el empleado para justificar una licencia por duelo?</h3>
+
+<button onclick="toggleAnswer('a3')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a3">
+✅ b) Certificado de defunción
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>4. ¿Cuántos días pagados concede la empresa por duelo?</h3>
+
+<button onclick="toggleAnswer('a4')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a4">
+✅ c) 3 días
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>5. ¿Qué condiciones debe cumplir el empleado para solicitar una LOA?</h3>
+
+<button onclick="toggleAnswer('a5')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a5">
+✅ b) Estar en regla y presentar documentación de respaldo
+</div>
+
+</div>
+
+
+<script>
+
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
