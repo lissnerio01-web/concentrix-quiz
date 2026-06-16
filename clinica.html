@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica In Situ</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">🏠 Volver al menú</a>
+
+<header>
+<h1>🩺 Clínica In Situ</h1>
+</header>
+
+<div class="question">
+<h3>1. ¿Cuál es el objetivo de la política de la clínica in situ?</h3>
+<button onclick="toggleAnswer('a1')">Mostrar respuesta</button>
+<div class="answer" id="a1">
+✅ a) Proporcionar atención médica a empleados
+</div>
+</div>
+
+<div class="question">
+<h3>2. ¿Quiénes pueden acceder a la clínica in situ?</h3>
+<button onclick="toggleAnswer('a2')">Mostrar respuesta</button>
+<div class="answer" id="a2">
+✅ a) Todos los empleados de Concentrix Global Services
+</div>
+</div>
+
+<div class="question">
+<h3>3. ¿Qué debe hacer un empleado para solicitar asistencia médica?</h3>
+<button onclick="toggleAnswer('a3')">Mostrar respuesta</button>
+<div class="answer" id="a3">
+✅ a) Informar al supervisor y solicitar cita
+</div>
+</div>
+
+<div class="question">
+<h3>4. ¿Qué situaciones se consideran emergencias según la política?</h3>
+<button onclick="toggleAnswer('a4')">Mostrar respuesta</button>
+<div class="answer" id="a4">
+✅ a) Fiebre alta, convulsiones, cortes con sangrado abundante
+</div>
+</div>
+
+<div class="question">
+<h3>5. ¿Qué documentos debe llevar el empleado a la cita médica?</h3>
+<button onclick="toggleAnswer('a5')">Mostrar respuesta</button>
+<div class="answer" id="a5">
+✅ a) DUI válido y copia
+</div>
+</div>
+
+<div class="question">
+<h3>6. ¿Qué responsabilidades tiene el supervisor en caso de emergencia?</h3>
+<button onclick="toggleAnswer('a6')">Mostrar respuesta</button>
+<div class="answer" id="a6">
+✅ a) Contactar clínica y seguridad
+</div>
+</div>
+
+<div class="question">
+<h3>7. ¿Qué sanciones existen por mal uso de los recursos de la clínica?</h3>
+<button onclick="toggleAnswer('a7')">Mostrar respuesta</button>
+<div class="answer" id="a7">
+✅ a) Sanciones disciplinarias hasta despido
+</div>
+</div>
+
+<div class="question">
+<h3>8. ¿Qué directriz se aplica para la concesión de bajas médicas?</h3>
+<button onclick="toggleAnswer('a8')">Mostrar respuesta</button>
+<div class="answer" id="a8">
+✅ a) Directriz ISSS
+</div>
+</div>
+
+<script>
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+</script>
+
+</body>
+</html>
