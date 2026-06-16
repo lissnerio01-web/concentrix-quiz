@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evaluación Operativa y Gestión de Personal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1,h2{
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">
+🏠 Volver al menú
+</a>
+
+<header>
+<h1>📊 Evaluación Operativa y Gestión de Personal</h1>
+</header>
+
+<h2>Sección I: Glosario y Definiciones Técnicas</h2>
+
+<div class="question">
+
+<h3>
+1. Un agente pasa el 45% de su tiempo conectado en atención activa o trabajo posterior a la llamada. ¿Qué métrica operativa describe directamente este porcentaje?
+</h3>
+
+<button onclick="toggleAnswer('a1')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a1">
+✅ b) Occupancy (OCC)
+</div>
+
+</div>
+
+<div class="question">
+
+<h3>
+2. ¿Qué significan exactamente las siglas OTF en el entorno de operaciones?
+</h3>
+
+<button onclick="toggleAnswer('a2')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a2">
+✅ c) Offer to Forecast
+</div>
+
+</div>
+
+<div class="question">
+
+<h3>
+3. Cuando el volumen de llamadas es críticamente bajo y se requiere reducir costos enviando a personal a casa antes de terminar su turno de manera voluntaria, ¿qué estrategias se aplican?
+</h3>
+
+<button onclick="toggleAnswer('a3')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a3">
+✅ d) Programas VGH o VTO
+</div>
+
+</div>
+
+
+<h2>Sección II: Procesos Disciplinarios y Administrativos</h2>
+
+<div class="question">
+
+<h3>
+4. El camino formal para la gestión del desempeño permite saltarse pasos si el supervisor realiza sesiones de coaching presenciales SBS.
+</h3>
+
+<button onclick="toggleAnswer('a4')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a4">
+✅ b) Falso
+</div>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+5. Las suspensiones temporales han sido completamente eliminadas de la ruta disciplinaria.
+</h3>
+
+<button onclick="toggleAnswer('a5')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a5">
+✅ b) Falso
+</div>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+6. Las amonestaciones formales deben imprimirse para la firma física del colaborador y luego archivarse en eStart.
+</h3>
+
+<button onclick="toggleAnswer('a6')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a6">
+✅ b) Falso
+</div>
+
+</div>
+
+
+<div class="question">
+
+<h3>
+7. Si una incapacidad médica cubre un periodo de 2 días en un agente presencial, este tiene la obligación de depositar la copia física.
+</h3>
+
+<button onclick="toggleAnswer('a7')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a7">
+✅ b) Falso
+</div>
+
+</div>
+
+
+<script>
+
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
