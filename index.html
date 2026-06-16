@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario de Concentrix</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#121212;
+    color:white;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#00d4ff;
+}
+
+h2{
+    background:#1f1f1f;
+    padding:15px;
+    border-radius:10px;
+    color:#00d4ff;
+}
+
+.card{
+    background:#1e1e1e;
+    padding:15px;
+    margin:15px 0;
+    border-radius:12px;
+}
+
+.correcta{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+button{
+    background:#00d4ff;
+    color:black;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.respuesta{
+    display:none;
+    margin-top:10px;
+}
+</style>
+
+<script>
+function mostrar(id){
+    let x=document.getElementById(id);
+
+    if(x.style.display==="block"){
+        x.style.display="none";
+    }else{
+        x.style.display="block";
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h1>📚 Cuestionario de Concentrix</h1>
+
+<h2>Matrimonio</h2>
+
+<div class="card">
+<p><b>1. ¿Cuál es el objetivo principal de la política de matrimonio?</b></p>
+
+<button onclick="mostrar('r1')">Mostrar respuesta</button>
+
+<div class="respuesta" id="r1">
+<p class="correcta">
+✅ a) Regular el beneficio de baja por matrimonio para empleados
+</p>
+</div>
+</div>
+
+
+<div class="card">
+<p><b>2. ¿Cuántos días remunerados de permiso por matrimonio se otorgan?</b></p>
+
+<button onclick="mostrar('r2')">Mostrar respuesta</button>
+
+<div class="respuesta" id="r2">
+<p class="correcta">
+✅ b) 5 días
+</p>
+</div>
+</div>
+
+<hr>
+
+<h2>Paternidad</h2>
+
+<div class="card">
+<p><b>1. ¿Cuántos días completos pagados se otorgan por paternidad?</b></p>
+
+<button onclick="mostrar('r3')">Mostrar respuesta</button>
+
+<div class="respuesta" id="r3">
+<p class="correcta">
+✅ c) 3 días
+</p>
+</div>
+</div>
+
+<hr>
+
+<h2>Evaluación Operativa y Gestión de Personal</h2>
+
+<div class="card">
+<p><b>1. Un agente pasa el 45% de su tiempo conectado en atención activa o trabajo posterior a la llamada. ¿Qué métrica operativa describe directamente este porcentaje?</b></p>
+
+<button onclick="mostrar('r4')">Mostrar respuesta</button>
+
+<div class="respuesta" id="r4">
+<p class="correcta">
+✅ b) Occupancy (OCC)
+</p>
+</div>
+</div>
+
+<div class="card">
+<p><b>2. ¿Qué significan exactamente las siglas OTF en el entorno de operaciones?</b></p>
+
+<button onclick="mostrar('r5')">Mostrar respuesta</button>
+
+<div class="respuesta" id="r5">
+<p class="correcta">
+✅ c) Offer to Forecast
+</p>
+</div>
+</div>
+
+<div class="card">
+<p><b>3. Cuando el volumen de llamadas es críticamente bajo y se requiere reducir costos enviando a personal a casa antes de terminar su turno de manera voluntaria, ¿qué estrategias se aplican?</b></p>
+
+<button onclick="mostrar('r6')">Mostrar respuesta</button>
+
+<div class="respuesta" id="r6">
+<p class="correcta">
+✅ d) Programas VGH o VTO
+</p>
+</div>
+</div>
+
+</body>
+</html>
