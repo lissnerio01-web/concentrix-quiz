@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conectividad WAH</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">
+🏠 Volver al menú
+</a>
+
+<header>
+<h1>🌐 Política Margen de Conectividad para WAH</h1>
+</header>
+
+<div class="question">
+<h3>1. ¿Cuál es el objetivo principal de la política de conectividad para WAH?</h3>
+
+<button onclick="toggleAnswer('a1')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a1">
+✅ a) Cubrir el coste de la conectividad doméstica para personal que trabaja desde casa
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>2. ¿Quiénes son elegibles para recibir la asignación de conectividad?</h3>
+
+<button onclick="toggleAnswer('a2')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a2">
+✅ b) Asesores, líderes de equipo, formadores y aprendices que trabajan desde casa por necesidades del negocio
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>3. ¿Cuál es la cantidad fija que se paga por la asignación de conectividad?</h3>
+
+<button onclick="toggleAnswer('a3')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a3">
+✅ b) $28 USD
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>4. ¿La asignación de conectividad forma parte del salario?</h3>
+
+<button onclick="toggleAnswer('a4')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a4">
+✅ b) No, es mera liberalidad
+</div>
+
+</div>
+
+
+<div class="question">
+<h3>5. ¿Qué sucede si el empleado está en una baja no remunerada equivalente o superior a un periodo de pago?</h3>
+
+<button onclick="toggleAnswer('a5')">
+Mostrar respuesta
+</button>
+
+<div class="answer" id="a5">
+✅ b) No recibe el bono de conectividad
+</div>
+
+</div>
+
+
+<script>
+
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
