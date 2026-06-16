@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Días Festivos Nacionales</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.question{
+background:#1f1f1f;
+padding:20px;
+margin:20px;
+border-radius:20px;
+}
+
+button{
+background:#00d9ff;
+color:black;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+color:#00ff88;
+font-weight:bold;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:12px 20px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<a class="back" href="index.html">
+🏠 Volver al menú
+</a>
+
+<header>
+<h1>🎉 Días Festivos Nacionales</h1>
+</header>
+
+<div class="question">
+<h3>1. ¿Cuál es el objetivo de la política de trabajo en días festivos nacionales?</h3>
+<button onclick="toggleAnswer('a1')">Mostrar respuesta</button>
+<div class="answer" id="a1">
+✅ a) Definir los pagos por trabajar en un día festivo nacional
+</div>
+</div>
+
+<div class="question">
+<h3>2. ¿A quién aplica esta política?</h3>
+<button onclick="toggleAnswer('a2')">Mostrar respuesta</button>
+<div class="answer" id="a2">
+✅ b) Todos los empleados en El Salvador
+</div>
+</div>
+
+<div class="question">
+<h3>3. ¿Qué pago recibe un empleado que trabaja en un día festivo nacional?</h3>
+<button onclick="toggleAnswer('a3')">Mostrar respuesta</button>
+<div class="answer" id="a3">
+✅ b) Salario base + 100% adicional
+</div>
+</div>
+
+<div class="question">
+<h3>4. ¿Qué artículo del Código Laboral regula el pago por trabajar en días festivos?</h3>
+<button onclick="toggleAnswer('a4')">Mostrar respuesta</button>
+<div class="answer" id="a4">
+✅ b) Artículo 192
+</div>
+</div>
+
+<script>
+
+function toggleAnswer(id){
+
+let answer=document.getElementById(id);
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}
+else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
